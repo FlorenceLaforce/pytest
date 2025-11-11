@@ -16,3 +16,5 @@ def test_note_valide():
     s.add_note(60)
     g = s.grades
     assert g == [75,60]
+    g.append(80)
+    assert s.grades == [75,60]
